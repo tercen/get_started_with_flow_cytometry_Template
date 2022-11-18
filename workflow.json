@@ -4,7 +4,7 @@
   "isDeleted": false,
   "rev": "2-82d58f7d6575a43fff55bae911b3053a",
   "description": "Performs FlowSOM (cluster n=15) and views the results with a heatmap. 2D plot with UMAP. ",
-  "name": "KickStart template",
+  "name": "Get Started with Flow Cytometry",
   "createdBy": "MahoTercen",
   "acl": {
     "kind": "Acl",
@@ -25,9 +25,7 @@
       "uri": "https://github.com/tercen/simple_workflow_tmpl"
     }
   ],
-  "tags": [
-    "flowjo"
-  ],
+  "tags": [],
   "meta": [
     {
       "kind": "Pair",
