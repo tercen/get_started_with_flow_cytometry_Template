@@ -1,23 +1,23 @@
 {
   "kind": "Workflow",
-  "id": "edb0255192e5d9777592711612bd1d3c",
+  "id": "59d104aa565e8f13687588f117049ec2",
   "isDeleted": false,
-  "rev": "2-82d58f7d6575a43fff55bae911b3053a",
+  "rev": "11-806e15907c3d6ea191b774400735dd2a",
   "description": "Performs FlowSOM (cluster n=15) and views the results with a heatmap. 2D plot with UMAP. ",
   "name": "Get Started with Flow Cytometry",
-  "createdBy": "MahoTercen",
+  "createdBy": "fnaji",
   "acl": {
     "kind": "Acl",
-    "owner": "Maho_Team",
+    "owner": "fnaji",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-11-03T10:52:08.952942Z"
+    "value": "2023-02-22T09:13:35.099780Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-11-03T10:52:09.196312Z"
+    "value": "2023-02-22T10:18:34.898412Z"
   },
   "urls": [
     {
@@ -31,16 +31,31 @@
       "kind": "Pair",
       "key": "copyOf",
       "value": "f8a10d0f634bec18e16e16305e002f60"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_reset_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_old_task_",
+      "value": "0.10.15"
     }
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/FlowJo_cluster_explorer_full_template"
+    "uri": "https://github.com/tercen/GetStarted_FlowCytometry_Basic_Template"
   },
-  "version": "0.0.6",
+  "version": "0.0.2",
   "authors": [],
   "isPublic": false,
-  "projectId": "5c2bfa7c3eb6067a00fba30025213377",
+  "projectId": "59d104aa565e8f13687588f11703b7a8",
   "folderId": "",
   "links": [
     {
@@ -85,7 +100,7 @@
       "kind": "TableStep",
       "id": "0396dda7-fae2-4ffd-865b-4cee6a25cb06",
       "groupId": "",
-      "name": "Data set",
+      "name": "FCS Table",
       "inputs": [],
       "outputs": [
         {
@@ -104,8 +119,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 784.5050000000001,
-          "y": -167.5
+          "x": 785.5050000000001,
+          "y": -181.5
         }
       },
       "state": {
@@ -119,7 +134,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "75a77e49-8821-4e3e-9345-0fa0136dfd62",
+          "id": "1d87b45c-51fc-4944-9f31-d6de1c8df44a",
           "relations": []
         }
       }
@@ -169,7 +184,21 @@
         "kind": "Crosstab",
         "axis": {
           "kind": "XYAxisList",
-          "rectangleSelections": [],
+          "rectangleSelections": [
+            {
+              "kind": "Rectangle",
+              "extent": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "topLeft": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 4.0
+              }
+            }
+          ],
           "xyAxis": [
             {
               "kind": "XYAxis",
@@ -279,7 +308,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 250.0,
+          "cellSize": 23.74389534720001,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -305,7 +334,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 413042
+          "nRows": 250342
         },
         "filters": {
           "kind": "Filters",
@@ -318,14 +347,14 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "FlowSOM",
-            "version": "1.3.4",
-            "operatorId": "ffde8623c8986c5db0a5a925a3d52c99",
+            "version": "1.6.0",
+            "operatorId": "479c720afb58d2c6d24f9bd461bbe3fc",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
                 "name": "nclust",
-                "value": "15"
+                "value": "NULL"
               },
               {
                 "kind": "PropertyValue",
@@ -371,16 +400,6 @@
                 "kind": "PropertyValue",
                 "name": "distf",
                 "value": "2"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "minPercent",
-                "value": "0.05"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "labelQuantile",
-                "value": "0.95"
               }
             ],
             "url": {
@@ -444,13 +463,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "904cd458-30d3-47c7-9808-b523f6dfa2dc"
+        "id": "45082792-809b-4076-b2b1-a1375fec5463"
       }
     },
     {
@@ -634,7 +653,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 413042
+          "nRows": 250342
         },
         "filters": {
           "kind": "Filters",
@@ -647,8 +666,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "umap",
-            "version": "1.2.0",
-            "operatorId": "ffde8623c8986c5db0a5a925a3d5418c",
+            "version": "1.2.1",
+            "operatorId": "53164e94522661d412d257c6f3753c08",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -663,6 +682,11 @@
               },
               {
                 "kind": "PropertyValue",
+                "name": "n_neighbors",
+                "value": "15"
+              },
+              {
+                "kind": "PropertyValue",
                 "name": "spread",
                 "value": "1"
               },
@@ -674,7 +698,7 @@
               {
                 "kind": "PropertyValue",
                 "name": "pca",
-                "value": "NULL"
+                "value": "-1"
               },
               {
                 "kind": "PropertyValue",
@@ -748,13 +772,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "cb4624b2-7a08-411c-855f-26f9f0f8dd86"
+        "id": "b18c8035-32cc-4317-8653-6406510dd007"
       }
     },
     {
@@ -834,12 +858,12 @@
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "-0.9909654413231794"
+                      "stringValue": "-1.3440074716736763"
                     },
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "6.789432062981247"
+                      "stringValue": "5.164565208488634"
                     }
                   ]
                 }
@@ -952,7 +976,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1015,13 +1039,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6c8809e1-5eb9-4609-8440-d91bb56192a9"
+        "id": "624574a6-6aab-48dc-a68c-d8fd9e20b467"
       }
     },
     {
@@ -1054,8 +1078,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 1052.505,
-          "y": 139.5
+          "x": 1042.505,
+          "y": 78.5
         }
       },
       "state": {
@@ -1100,12 +1124,12 @@
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "-0.9909654413231794"
+                      "stringValue": "-1.3440074716736763"
                     },
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "6.789432062981247"
+                      "stringValue": "5.164565208488634"
                     }
                   ]
                 }
@@ -1198,7 +1222,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 0.002238668029521729,
+          "cellSize": 0.0030747884308595214,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1266,7 +1290,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 413042
+          "nRows": 250342
         },
         "filters": {
           "kind": "Filters",
@@ -1383,13 +1407,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "cb3cf578-691d-42e1-b184-64790afe6da3"
+        "id": "8e6c9fe3-6118-4560-bfe1-bf7bf0c988f9"
       }
     },
     {
@@ -1423,7 +1447,7 @@
         "topLeft": {
           "kind": "Point",
           "x": 827.5661495971681,
-          "y": -1.5
+          "y": -0.5
         }
       },
       "state": {
@@ -1547,7 +1571,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 250.0,
+          "cellSize": 128.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1573,7 +1597,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 413042
+          "nRows": 250342
         },
         "filters": {
           "kind": "Filters",
@@ -1587,13 +1611,13 @@
             "kind": "OperatorRef",
             "name": "asinh",
             "version": "1.1.0",
-            "operatorId": "f153ee541bf0b953e30242dd79349619",
+            "operatorId": "42ff0cd811d627ff1f68d35e333bc48e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
                 "name": "scale",
-                "value": "15"
+                "value": "150"
               }
             ],
             "url": {
@@ -1657,13 +1681,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "5e75a562-2034-47ef-b0f8-c6a2c64d23e1"
+        "id": "df9f0510-d626-4f0b-bb03-f0b785fd23d0"
       }
     },
     {
@@ -1709,53 +1733,7 @@
       },
       "model": {
         "kind": "MeltStepModel",
-        "factors": [
-          {
-            "kind": "Factor",
-            "name": "FJComp-AARD-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-APC-H7-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-Ax488-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-Ax700-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-PE-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-PE-Cy5-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-PE-Cy7-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-PE-TxRed-A",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "FJComp-PacBlue-A",
-            "type": "double"
-          }
-        ],
+        "factors": [],
         "namespace": "Channels",
         "selectionPattern": "",
         "factorType": "double"
@@ -1765,7 +1743,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": 21.0,
-    "y": 307.0
+    "x": -227.0,
+    "y": 319.0
   }
 }
