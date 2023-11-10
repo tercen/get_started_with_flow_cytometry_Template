@@ -6,8 +6,12 @@
 ---
 
 When you create a new workflow look for this template.
-![[]]
-![[Pasted image 20231110121931.png]]
+
+![Pasted image 20231110121931.png](https://github.com/tercen/get_started_with_flow_cytometry_Template/blob/main/Document%20Images/Pasted%20image%2020231110121931.png))
+
+![image](https://github.com/tercen/get_started_with_flow_cytometry_Template/blob/main/Document%20Images/Pasted%20image%2020231110121931.png)
+
+![image](https://github.com/tercen/get_started_with_flow_cytometry_Template/assets/64135638/84026afb-dc71-4105-bfed-6450df2ad816)
 
 ---
 If you want to explore deeper concepts check out this video.
